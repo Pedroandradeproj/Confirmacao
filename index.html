@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Confirmação de Presença | Casamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="header">
+        <h1>Confirme sua Presença</h1>
+        <p>Digite seu primeiro nome e escolha sua família</p>
+      </div>
+      
+      <div class="search-section">
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Digite seu primeiro nome..." 
+            autocomplete="off"
+            autocapitalize="words"
+          >
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+        
+        <div id="selectedGroup" class="selected-group">
+          <h3>Família selecionada</h3>
+          <div class="group-names" id="groupNames"></div>
+          <button class="btn-confirm" id="openModalBtn">Confirmar presença</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Botão para voltar ao site do casamento -->
+  <div class="back-to-wedding">
+    <a href="https://sites.icasei.com.br/victore_lorrane/home" 
+       target="_blank" 
+       class="btn-back">
+      ← Voltar para o site do casamento
+    </a>
+  </div>
+  
+  <div class="support">
+    <a href="https://wa.me/5531984779327" target="_blank" class="support-btn">
+      📱 Precisa de ajuda? Fale conosco
+    </a>
+  </div>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Confirmar presença</h3>
+        <p>Informe os nomes completos de quem irá</p>
+      </div>
+      <div class="modal-body">
+        <div id="dynamicInputs"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="closeModalBtn">Cancelar</button>
+        <button class="btn btn-primary" id="sendConfirmBtn">Confirmar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+  
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

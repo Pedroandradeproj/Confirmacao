@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <div id="loginBox" class="login-form">
+      <h2>🔒 Painel Administrativo</h2>
+      <input type="email" id="email" placeholder="E-mail" autocomplete="email">
+      <input type="password" id="senha" placeholder="Senha">
+      <button onclick="login()" class="btn-export" style="width: 100%; margin-top: 10px;">Entrar</button>
+      <p style="text-align: center; margin-top: 15px; font-size: 0.8rem; color: #B89A6E;">
+        Acesso restrito aos administradores
+      </p>
+    </div>
+    
+    <div id="adminContent" class="admin-content">
+      <div class="admin-header">
+        <h1>📊 Painel de Controle</h1>
+        <div class="admin-actions">
+          <span id="userEmail" style="color: #B89A6E; font-size: 0.9rem;"></span>
+          <button onclick="logout()" class="btn-export" style="background: #dc3545;">🚪 Sair</button>
+        </div>
+      </div>
+      
+      <div class="stats" id="stats"></div>
+      
+      <div style="padding: 0 24px;">
+        <button onclick="exportData()" class="btn-export">📥 Exportar Lista (CSV)</button>
+      </div>
+      
+      <div class="confirmed-list">
+        <h2 style="margin-bottom: 20px; color: #5C4B3A;">✅ Confirmações Recebidas</h2>
+        <div id="confirmedList"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+  
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
