@@ -71,7 +71,7 @@ const familias = [
   ["Carol", "Patrick"],
   ["Aryel", "Jessica"],
   ["Ana Cristiane","André Moraes"],
-  ["Arthur","Ana Carolina "],
+  ["Arthur","Ana Carolina"],
   ["Edite"],
   ["Italo"],
   ["Eurides"]
