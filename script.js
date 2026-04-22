@@ -49,7 +49,7 @@ const familias = [
   ["Flávio", "Anita", "Filipe", "Victoria"],
   ["Ronaldo", "Cibele", "Ariadiny"],
   ["Atila", "Angelica", "Vitor Lucas", "Silvana", "Lorena (C)"],
-  ["Julio Cezar", "Nieda", "Thainara", "Bricio", "Tatiele"],
+  ["Julio Cezar", "Nieda", "Thainara", "Bricio", "Tatiele", "Marcos Paulo"],
   ["Vinicius", "Ana Lucia", "Bruno", "Thayanne"],
   ["Herika", "Bruno"],
   ["Nelson", "Jô", "Lorrana", "Lorrany", "Lorran"],
@@ -74,7 +74,9 @@ const familias = [
   ["Arthur","Ana Carolina"],
   ["Edite"],
   ["Italo"],
-  ["Eurides"]
+  ["Eurides"],
+  ["Adriana Dias"]
+  
 ];
 
 let currentGroup = null;
